@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College AI Assistant</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header Section -->
+    <nav class="bg-black p-4 mb-8">
+        <div class="container mx-auto">
+            <ul class="flex justify-center space-x-8 text-white text-lg">
+                <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+                <li><a href="#chat" class="hover:text-yellow-500">Chat</a></li>
+                <li><a href="#faq" class="hover:text-yellow-500">FAQ</a></li>
+                <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Home Section -->
+   <section id="home" class="py-16 shadow-md mb-8" style="background-color: #FFD8A9;">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center">
+            <!-- Image (left on medium and larger screens) -->
+            <div class="md:w-1/3 md:order-none mb-8 md:mb-0 ">
+                <img src="./assets/institute.png" alt="AI Assistant Illustration" class="w-fit h-auto rounded-full shadow-lg">
+            </div>
+            <!-- Text Content (right on medium and larger screens) -->
+            <div class="md:w-2/3 text-center md:text-left">
+                <h1 class="text-4xl font-bold mb-4">Welcome to the IIIT NR College AI Assistant</h1>
+                <p class="text-2xl text-gray-600">Your virtual assistant to guide you through college-related queries.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Chat Section -->
+<section id="chat" class="py-16 mb-8" style="background-color: #FDEEDC;" >
+    <div class="container mx-auto text-center" >
+        <h2 class="text-3xl font-bold mb-4">Chat with AI Assistant</h2>
+        <div id="box" class="rounded-lg shadow-lg p-6 mx-auto max-w-3xl", style="background-color: #774206;">
+            <div id="chatbox" class="mb-6 h-64 p-4 rounded overflow-y-scroll" style="background-color: #faf5ff;"><div id="messages"></div></div> <!-- Adjusted margin here -->
+            <div class="space-y-4">
+                <input type="text" id="userInput" placeholder="Ask a question..."  class="w-full p-3 border border-gray-300 rounded"/>
+                <button onclick="sendMessage()" class="bg-green-500 text-white py-3 rounded hover:bg-orange-600">Send</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white shadow-md mb-8" style="background-color: #FFD8A9;">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="faq-item bg-gray-100 p-6 rounded shadow" style="background-color: #E38B29;">
+                    <h3 class="text-xl font-semibold mb-2">How can I use this AI assistant?</h3>
+                    <p>This assistant helps with answering general queries related to college.</p>
+                </div>
+                <div class="faq-item bg-gray-100 p-6 rounded shadow" style="background-color: #E38B29;">
+                    <h3 class="text-xl font-semibold mb-2">What types of questions can I ask?</h3>
+                    <p>You can ask about admissions, course schedules, events, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">About the AI Assistant</h2>
+            <p class="text-lg text-gray-600 mb-4">This assistant is designed to help students with common college queries using AI and NLP technologies.</p>
+            <p class="text-lg text-gray-800" >Developed by [Awatansh, Harshit and Arnav].</p>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
